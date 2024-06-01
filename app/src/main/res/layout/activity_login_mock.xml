@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="26dp"
+    tools:context=".LoginMockActivity">
+
+    <TextView
+        android:id="@+id/logoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/app_name"
+        android:textColor="#283593"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoname"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="monospace"
+        android:text="Secure and Fast Chat App"
+        android:textColor="#283593"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/subheading"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheading"
+        android:layout_marginTop="1dp"
+        android:inputType=""
+        android:hint="User Id"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/userid_input"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:textStyle="bold"
+        android:id="@+id/login_btn"
+        android:layout_below="@id/userid_input"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>
